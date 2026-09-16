@@ -1,0 +1,4 @@
+node_modules/
+outbox/
+.DS_Store
+*.log
