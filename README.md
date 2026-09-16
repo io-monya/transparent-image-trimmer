@@ -22,6 +22,37 @@ macOSネイティブのFinderファイル選択画面が開き、いつも通り
 
 ---
 
+## 必要な環境
+
+- macOS
+  - macOS 15.6.1で動作確認済み
+  - その他のバージョンは未検証
+- Node.js 20.9.0以上
+- npm
+
+Finderのファイル選択画面にmacOSの機能を使用しているため、現在はmacOS専用です。
+
+---
+
+## 導入方法
+
+### 1. リポジトリを取得
+
+```bash
+git clone https://github.com/io-monya/transparent-image-trimmer.git
+cd transparent-image-trimmer
+```
+
+### 2. 必要なパッケージをインストール
+
+```bash
+npm install
+```
+
+初回のみ必要です。インストールが完了すると、ツールを起動できるようになります。
+
+---
+
 ## 使い方
 
 ### 1. ツールの起動
@@ -52,7 +83,7 @@ npm start
 ## フォルダ構成
 
 ```text
-trimming_tool/
+transparent-image-trimmer/
 ├── outbox/           # トリミングされた画像がタイムスタンプ付きで保存される場所
 ├── sample_images/    # 動作テスト用のサンプル画像（circle.png, empty.png, rect.webp）
 ├── src/
@@ -63,3 +94,9 @@ trimming_tool/
 ├── package.json
 └── tsconfig.json
 ```
+
+---
+
+## ライセンス
+
+このツールは[MIT License](LICENSE)のもとで公開されています。

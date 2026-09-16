@@ -1,5 +1,5 @@
 {
-  "name": "trimming-tool",
+  "name": "transparent-image-trimmer",
   "version": "1.0.0",
   "description": "Auto-trim transparent margins for images with rich TUI & native macOS file picker",
   "main": "src/index.ts",
@@ -9,7 +9,12 @@
     "build": "tsc",
     "test": "tsx --test src/*.test.ts"
   },
-  "keywords": ["trim", "png", "sharp", "cli"],
+  "keywords": [
+    "trim",
+    "png",
+    "sharp",
+    "cli"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -21,5 +26,8 @@
     "@types/node": "^22.13.9",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }
